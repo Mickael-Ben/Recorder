@@ -35,7 +35,10 @@ temp/
 hooks/
 platforms/
 plugins/
+<<<<<<< HEAD
 Assets/Audio/*
+=======
+>>>>>>> fcdc5e68eef585c89a08bd336b213b05a4c0e4d1
 plugins/android.json
 plugins/ios.json
 www/
