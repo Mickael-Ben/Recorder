@@ -134,7 +134,7 @@ public class AndroidUtils : MonoBehaviour
         if (!System.IO.Directory.Exists(Application.persistentDataPath + GALLERY_PATH))
             System.IO.Directory.CreateDirectory(Application.persistentDataPath + GALLERY_PATH);
         System.IO.File.Copy(Application.persistentDataPath + "/" + VIDEO_NAME + ".mp4", Application.persistentDataPath + GALLERY_PATH + "/" + fileName);
-        ShowToast("Lưu Video thành công");
+        ShowToast("Video saved to gallery");
         yield return null;
         RefreshGallery(Application.persistentDataPath + GALLERY_PATH + "/" + fileName);
 #endif
