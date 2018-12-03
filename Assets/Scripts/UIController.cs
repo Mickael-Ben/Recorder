@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Timers;
+using UnityEngine.UI;
+
 public class UIController : MonoBehaviour
 {
     private AndroidUtils androidUtils;
@@ -48,11 +50,12 @@ public class UIController : MonoBehaviour
         Debug.Log("initialCounter " + (initialCounter.ToString()));
         blackPanel.gameObject.SetActive(true);
         whitePanel.gameObject.SetActive(true);
+        blackPanel.gameObject.GetComponentInChildren<Text>().text = "93";
+
         startRecordbtn.SetActive(false);
         stopRecordBtn.SetActive(true);
         androidUtils.PrepareRecorder();
         StartCoroutine(DelayCallRecord());
-
     }
     private IEnumerator DelayCallRecord()
     {
